@@ -1,0 +1,287 @@
+{
+  "name": "Piloune - Votre Fantôme de Compagnie",
+  "short_name": "Piloune",
+  "description": "Prenez soin de Piloune, votre fantôme de compagnie virtuel ! Surveillez ses 5 stats (bonheur, vitalité, repos, propreté, psy) et évitez le mode ronron. 12 actions disponibles avec événements aléatoires !",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1E1B4B",
+  "theme_color": "#6B46C1",
+  "lang": "fr",
+  "dir": "ltr",
+  
+  "icons": [
+    {
+      "src": "./icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  
+  "screenshots": [
+    {
+      "src": "./screenshot-mobile.png",
+      "sizes": "375x812",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Interface mobile de Piloune"
+    },
+    {
+      "src": "./screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Interface desktop de Piloune"
+    }
+  ],
+  
+  "categories": [
+    "games",
+    "entertainment",
+    "lifestyle"
+  ],
+  
+  "keywords": [
+    "piloune",
+    "fantôme",
+    "tamagotchi",
+    "animal de compagnie",
+    "virtuel",
+    "jeu",
+    "soin",
+    "stats",
+    "ronron",
+    "pwa"
+  ],
+  
+  "shortcuts": [
+    {
+      "name": "Nourrir Piloune",
+      "short_name": "Sucre",
+      "description": "Donner du sucre à Piloune pour augmenter sa vitalité",
+      "url": "./?action=feed",
+      "icons": [
+        {
+          "src": "./icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Emmener Piloune au Spa",
+      "short_name": "Spa",
+      "description": "Emmener Piloune au spa pour booster toutes ses stats",
+      "url": "./?action=spa",
+      "icons": [
+        {
+          "src": "./icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Faire un Câlin",
+      "short_name": "Câlin",
+      "description": "Faire un câlin à Piloune pour augmenter bonheur et repos",
+      "url": "./?action=hug",
+      "icons": [
+        {
+          "src": "./icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Prendre une Douche",
+      "short_name": "Douche",
+      "description": "Laver Piloune (attention à l'eau dans l'oreille !)",
+      "url": "./?action=shower",
+      "icons": [
+        {
+          "src": "./icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  
+  "related_applications": [],
+  "prefer_related_applications": false,
+  
+  "protocol_handlers": [
+    {
+      "protocol": "web+piloune",
+      "url": "./?action=%s"
+    }
+  ],
+  
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "application/json": [".piloune"]
+      }
+    }
+  ],
+  
+  "share_target": {
+    "action": "./share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  
+  "handle_links": "preferred",
+  
+  "id": "piloune-app",
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  
+  "permissions": [
+    "notifications",
+    "background-sync",
+    "periodic-background-sync"
+  ],
+  
+  "features": [
+    "Cross Platform",
+    "Offline Support", 
+    "Push Notifications",
+    "Background Sync",
+    "Install Prompts",
+    "Shortcuts",
+    "Share Target"
+  ],
+  
+  "custom": {
+    "piloune": {
+      "version": "1.0.0",
+      "author": "Équipe Piloune",
+      "created": "2025-01-24",
+      "game_features": {
+        "stats": [
+          "bonheur",
+          "vitalité", 
+          "repos",
+          "propreté",
+          "psy"
+        ],
+        "actions": [
+          "sucre",
+          "douche",
+          "twitch",
+          "pétée",
+          "dormir15h",
+          "café",
+          "câlin",
+          "iris",
+          "coco_pops",
+          "spa",
+          "inventer_tdah",
+          "tu_ressens_quoi"
+        ],
+        "special_events": {
+          "eau_dans_oreille": {
+            "douche": 0.1,
+            "spa": 0.2
+          },
+          "daniel_se_barre": {
+            "tdah": 0.1,
+            "tu_ressens_quoi": 0.1
+          },
+          "daniel_reveille": {
+            "dormir15h": 0.1
+          },
+          "ateco": {
+            "coco_pops": 0.1
+          }
+        },
+        "ronron_mode": {
+          "threshold_enter": 20,
+          "threshold_exit": 40,
+          "actions_required": 3
+        }
+      },
+      "technical": {
+        "framework": "Vanilla JavaScript",
+        "css": "Custom CSS with animations",
+        "storage": "localStorage",
+        "offline": "Service Worker",
+        "responsive": true,
+        "accessibility": "WCAG 2.1 AA",
+        "performance": "Optimized"
+      }
+    }
+  },
+  
+  "display_override": [
+    "window-controls-overlay",
+    "minimal-ui",
+    "standalone",
+    "browser"
+  ],
+  
+  "user_preferences": {
+    "color_scheme_preference": "dark",
+    "contrast_preference": "standard"
+  }
+}
